@@ -1,0 +1,24 @@
+#cursor {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  animation: blink 1s steps(1) infinite;
+  color: #adfeff;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.center {
+  margin: auto; width: 30%; margin-top: 19%; height: 200px; text-align: center;
+}
+
