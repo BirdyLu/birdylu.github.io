@@ -26,6 +26,22 @@
   opacity: 0.9;
 }
 
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
 .links {
   font-size: 20px; 
   color: white;
