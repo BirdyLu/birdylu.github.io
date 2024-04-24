@@ -8,12 +8,12 @@ function main(mouseX) {
   var petX = rect.left;
 
   const dinosaurImagesRight = [
-    'dino/dino-run-right-1.png',
-    'dino/dino-run-right-2.png',
+    '/dino/dino-run-right-1.png',
+    '/dino/dino-run-right-2.png',
   ];
   const dinosaurImagesLeft = [
-    'dino/dino-run-left-1.png',
-    'dino/dino-run-left-2.png',
+    '/dino/dino-run-left-1.png',
+    '/dino/dino-run-left-2.png',
   ];
 
 
@@ -49,19 +49,19 @@ function main(mouseX) {
     if (Math.abs(dx) >= error) {
       if (mouseX > petX) {
         animateDinosaurRight();
-        //dinosaur.style.backgroundImage = `url('dino/dino-run-right-1.png')`;
+        //dinosaur.style.backgroundImage = `url('/dino/dino-run-right-1.png')`;
         petX += error;
         dinosaur.style.left = petX + 'px';
       } 
       else if (mouseX < petX) {
         animateDinosaurLeft();
-        //dinosaur.style.backgroundImage = `url('dino/dino-run-left-1.png')`;
+        //dinosaur.style.backgroundImage = `url('/dino/dino-run-left-1.png')`;
         petX -= error;
         dinosaur.style.left = petX + 'px';
       }
     } else {
       isRunning = false;
-      dinosaur.style.backgroundImage = `url('dino/dino-run-right-1.png')`;
+      dinosaur.style.backgroundImage = `url('/dino/dino-run-right-1.png')`;
     }
     
     requestAnimationFrame(updatePosition);
