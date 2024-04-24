@@ -1,33 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="/homepage.css">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link rel="stylesheet" type="text/css" href="flying_birds.css">
+	<link rel="stylesheet" type="text/css" href="dinorun.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Birdy Lu</title>
 </head>
-<body style="background-image: url('praire.jpeg');">
-	<div class="bird-container bird-container-one">
-	   <div class="bird bird-one"></div>
-	</div>        
-	<div class="bird-container bird-container-two">
-	  <div class="bird bird-two"></div>
-	</div>  
-	 <div class="bird-container bird-container-three">
-	   <div class="bird bird-three"></div>
-	 </div> 
-	 <div class="bird-container bird-container-four">
-	   <div class="bird bird-four"></div>
-	 </div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="myscript.js"></script>
 
-	<div class="center">
-		<p class="welcome"><span>H</span><span>i</span><span id="cursor">l</span></p>
-		<script src="https://asciinema.org/a/653840.js" id="asciicast-653840" async="true"></script>
+<body>
+	<div class="mainbody" style="background-image: url('praire.jpeg');">
+
+		<div class="center">
+			<a href="#profile" style="display: none;" id="hiddenButton">to profile</a>
+			<p class="welcome"><span>H</span><span>i</span><span id="cursor">l</span></p>
+			<span style="color: white; font-size: 25px"><b>If you press Enter...</b></span>
+		</div>
+		<div class="bird-container bird-container-one">
+		   <div class="bird bird-one"></div>
+		</div>        
+		<div class="bird-container bird-container-two">
+		  <div class="bird bird-two"></div>
+		</div>  
+		 <div class="bird-container bird-container-three">
+		   <div class="bird bird-three"></div>
+		 </div> 
+		 <div class="bird-container bird-container-four">
+		   <div class="bird bird-four"></div>
+		 </div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="myscript.js"></script>
 	</div>
+
+	<div class="row" id="profile" style="padding: 5%">
+		<div id="card" class="col-3" style="">
+			<img class="card-img-top" src="profile.jpg" alt="Card image">
+			<div class="card text-dark ">
+				<div class="card-header"><b>Birdy (Jianyi) Lu</b></div>
+				<div class="card-body">
+					I'm a keen and creative learner who enjoys exploring new fields of knowledge and skills, ranging from baristas to computer science. I'm looking to do projects or designing, as long as I can learn to do it, and gain new knowledge. I'm happily open to volunteering as well because I believe I'm in urgent need of experience and out-of-school practice :) 
+				</div>
+				<div class="dropdown dropend" style="margin-left: 14px; margin-bottom: 12px">
+				  <button type="button" class="btn btn-primary dropdown-toggle btn-success" data-bs-toggle="dropdown">
+				    My personal links
+				  </button>
+				  <ul class="dropdown-menu dropend">
+				    <li><a class="dropdown-item" href="https://github.com/BirdyLu" target="_blank">Github (I do have a few small programs done)</a></li>
+				    <li><a class="dropdown-item" href="https://www.linkedin.com/in/birdy-lu-a70449233/" target="_blank">LinkedIn</a></li>
+				    <li><a class="dropdown-item" href="https://www.codewars.com/users/BirdyLu" target="_blank">CodeWar</a></li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-8" style="border: 1px dashed; border-radius: 1em; grey; margin-left: auto; margin-right: 1%; padding: 2%;">
+			<p>IDK what to do with this section yet!</p>
+			<p>Maybe a few of my showcases for DESIGN role:</p>
+			<div class="list-group">
+				<a href="https://docs.google.com/presentation/d/1Q6f6oO4aoUAvlN9mEpympNiGZ9sYkgkwyR7lLqdxq80/edit?usp=sharing" class="list-group-item list-group-item-action" target="_blank"><b>Hand drawings on Procreate</b>
+					<p>Organized them into a powerpoint.</p>
+				</a>
+				<a href="https://docs.google.com/presentation/d/1ahXuF-HFySib6UOrgo3bqp6teqrbzvuoA3q16yUUMmY/edit?usp=sharing" class="list-group-item list-group-item-action list-group-item-success" target="_blank"><b>PowerPoint animation</b>
+					<p>It’s actually the background for an audio in one of my units, link to the video is down below.</p>
+				</a>
+				<a href="https://drive.google.com/file/d/1YoTNw4ia19XGpXJESHGYO0AyF5u1pKrN/view?usp=sharing" class="list-group-item list-group-item-action" target="_blank"><b>PowerPoint animation with BGM</b>
+					<p>It hits the rhythm in the BGM perfectly!</p>
+				</a>
+				<a href="#" class="list-group-item list-group-item-action list-group-item-success" target="_blank"><b>Recent hand-drawn animation draft for a neuroscience media release</b>
+					<p>The deadline is behind SUDATA subcom application deadline, so I can only show a draft of it :( </p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center p-3 text-dark footer">
+		<div id="dinosaur"></div>
+		<script type="text/javascript" src="dinorun.js"></script>
+		<a href="https://codepen.io/matchboxhero/pen/RLebOY" target="_blank">Click to see original designer of flying birds effect</a>
+		<br>
+		<a href="https://codepen.io/Abinbn/pen/dyQmGYV" target="_blank">Click to see original designer of a pet following cursor</a><br>
+		<a>All the rest are my original design</a>
+	</div>
+
 </body>
 </html>
