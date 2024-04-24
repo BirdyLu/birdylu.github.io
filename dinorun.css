@@ -1,0 +1,11 @@
+#dinosaur {
+    position: relative;
+    bottom: 0;
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    background-image: url('dino/dinosaur-right.png'); /* Replace with your dinosaur image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 50%;
+    right: 50%;
+}
