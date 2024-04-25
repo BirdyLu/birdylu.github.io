@@ -7,40 +7,11 @@ function main(mouseX) {
   var rect = dinosaur.getBoundingClientRect();
   var petX = rect.left;
 
-  const dinosaurImagesRight = [
-    '/dino/dino-run-right-1.png',
-    '/dino/dino-run-right-2.png',
-  ];
-  const dinosaurImagesLeft = [
-    '/dino/dino-run-left-1.png',
-    '/dino/dino-run-left-2.png',
-  ];
-
-
   // For tracking mouse movement
   function trackMouse(event) {
     mouseX = event.clientX;
   }
   document.addEventListener('mousemove', trackMouse);
-
-
-  // Function to animate the dinosaur facing right
-  function animateDinosaurRight() {
-    isRunning = true;
-    var index = 0;
-
-    dinosaur.style.backgroundImage = `url('${dinosaurImagesRight[index]}')`;
-    index = (index + 1) % dinosaurImagesRight.length;
-  }
-
-  // Function to animate the dinosaur facing left
-  function animateDinosaurLeft() {
-    isRunning = true;
-    var index = 0;
-
-    dinosaur.style.backgroundImage = `url('${dinosaurImagesLeft[index]}')`;
-    index = (index + 1) % dinosaurImagesLeft.length;
-  }
 
   function updatePosition() {
     var dx = mouseX - petX;
@@ -48,20 +19,18 @@ function main(mouseX) {
 
     if (Math.abs(dx) >= error) {
       if (mouseX > petX) {
-        animateDinosaurRight();
-        //dinosaur.style.backgroundImage = `url('/dino/dino-run-right-1.png')`;
+        dinosaur.style.backgroundImage = `url('/dino/dino-run-right.gif')`;
         petX += error;
         dinosaur.style.left = petX + 'px';
       } 
       else if (mouseX < petX) {
-        animateDinosaurLeft();
-        //dinosaur.style.backgroundImage = `url('/dino/dino-run-left-1.png')`;
+        dinosaur.style.backgroundImage = `url('/dino/dino-run-left.gif')`;
         petX -= error;
         dinosaur.style.left = petX + 'px';
       }
     } else {
       isRunning = false;
-      dinosaur.style.backgroundImage = `url('/dino/dino-run-right-1.png')`;
+      dinosaur.style.backgroundImage = `url('/dino/dino_standing.webp')`;
     }
     
     requestAnimationFrame(updatePosition);
