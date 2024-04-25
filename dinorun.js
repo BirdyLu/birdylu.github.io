@@ -44,8 +44,8 @@ function main(mouseX) {
 
 }
 
-// Add a click event listener to the document
-document.addEventListener('click', function(event) {
+// Add a click event listener to the dinosaur
+dinosaur.addEventListener('click', function(event) {
     // start dinorun
     main(event.clientX);
 });
