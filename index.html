@@ -75,6 +75,80 @@
 					<p>The deadline is behind SUDATA subcom application deadline, so I can only show a draft of it :( </p>
 				</a>
 			</div>
+
+			<div class="row" style="padding-top: 5%;">
+			<div style="" class="col-7">
+				<canvas id="myChart">
+				<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+				<script>
+				  const ctx = document.getElementById('myChart');
+
+				  const data = {
+				    labels: [
+				      'Eating',
+				      'Drinking',
+				      'Sleeping',
+				      'Designing',
+				      'Coding',
+				      'Music'
+				    ],
+				    datasets: [{
+				      label: 'MY SOURCES OF HAPINESS',
+				      data: [3, 2, 5, 5, 5, 5],
+				      fill: true,
+				      backgroundColor: 'rgba(171, 241, 255, 0.2)',
+				      borderColor: 'rgb(93, 183, 201)',
+				      pointBackgroundColor: 'rgb(93, 183, 201)',
+				      pointBorderColor: '#fff',
+				      pointHoverBackgroundColor: '#fff',
+				      pointHoverBorderColor: 'rgb(93, 183, 201)'
+				    }]
+				  };
+
+				  const config = {
+				    type: 'radar',
+				    data: data,
+				    options: {
+				      elements: {
+				        line: {
+				          borderWidth: 3
+				        }
+				      },
+				      scales: {
+				      	r: {
+				      		min: 0,
+				      		max: 5,
+				      		ticks: {
+				      			precision: 0,
+				      			font: {
+				      				size: 14
+				      			}
+				      		}
+				      	},
+				   	  },
+				   	  plugins: {
+				   	      legend: {
+				   	          labels: {
+				   	              // This more specific font property overrides the global property
+				   	              font: {
+				   	                  size: 14
+				   	              }
+				   	          }
+				   	      },
+				   	  }
+				    },
+				  };
+				  // </block:config>
+
+				  new Chart(ctx, config);
+				</script>
+				</canvas>
+			</div>
+
+			<div class="col-4" style="">
+				<p>Made with Chart.js, but couldnt figure out how to change the data label fontsize before SUDATA subcom application deadline :( Changed font size for axis and title though.</p>
+			</div>
+			</div>
 		</div>
 	</div>
 
