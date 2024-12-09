@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  var mouseX = 0; // Initialize mouseX
+  var mouseX = window.innerWidth / 2; // Initialize mouseX
   var rect = dinosaur.getBoundingClientRect();
   var petX = rect.left;
 
