@@ -1,8 +1,5 @@
 var dinosaur = document.getElementById('dinosaur');
 
-function main(mouseX) {
-  let isRunning = false;
-
   var mouseX = mouseX;
   var rect = dinosaur.getBoundingClientRect();
   var petX = rect.left;
@@ -29,7 +26,6 @@ function main(mouseX) {
         dinosaur.style.left = petX + 'px';
       }
     } else {
-      isRunning = false;
       dinosaur.style.backgroundImage = `url('/dino/dino_standing.webp')`;
     }
     
@@ -43,11 +39,4 @@ function main(mouseX) {
   updatePosition()
 
 }
-
-// Add a click event listener to the dinosaur
-dinosaur.addEventListener('click', function(event) {
-    // start dinorun
-    main(event.clientX);
-});
-
 
